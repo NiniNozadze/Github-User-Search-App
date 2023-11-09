@@ -102,6 +102,7 @@ searchBtn.addEventListener("click",function(e){
     }); 
     if(info!==""){
         imgCat.src=info.avatar_url;
+        imgCat.style.borderRadius="50%";
         h2Element.textContent=info.name;
         tagMail.textContent=info.mail;
         const joinDate = new Date(info.created_at);
